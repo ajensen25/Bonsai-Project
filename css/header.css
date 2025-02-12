@@ -1,0 +1,143 @@
+.sticky-header {
+  position: sticky;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem 2.5rem;
+  font-size: 15px;
+  font-weight: 400;
+  border-bottom: 1px solid rgba(160, 160, 160, 0.349);
+}
+
+.sticky-header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-left-logo-container {
+  margin-right: 4rem;
+}
+
+.header-logo {
+  height: 1.1rem;
+  padding-top: 0.2rem;
+}
+
+.header-left-navbar {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.product-navbar, 
+.usecases-navbar, 
+.templates-navbar, 
+.pricing-navbar, 
+.stories-navbar {
+  padding: 0rem 1rem;
+  cursor: pointer;
+  height: 5rem;
+}
+
+.product-navbar p, 
+.usecases-navbar p, 
+.templates-navbar p, 
+.pricing-navbar p, 
+.stories-navbar p {
+  line-height: 5rem;
+}
+
+.product-navbar:hover, 
+.usecases-navbar:hover, 
+.templates-navbar:hover, 
+.pricing-navbar:hover, 
+.stories-navbar:hover {
+  border-bottom: 2px solid var(--green);
+  color: var(--green);
+}
+
+.sticky-header-right {
+  display: flex;
+  align-items: center;
+}
+
+.login-container {
+  margin-right: 0.5rem;
+}
+
+.login-button {
+  height: 2.5rem;
+  background: none;
+  border: none;
+  border-radius: 10px;
+  width: 4.5rem;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  transition: 0.2s;
+  background-color: rgba(230, 230, 230, 0.494);
+}
+
+.header-right-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.book-demo-container {
+  margin-right: 0.5rem;
+}
+
+.book-demo-button {
+  height: 2.5rem;
+  background: none;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 7rem;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.book-demo-button:hover {
+  color: var(--green);
+}
+
+.start-free-button {
+  height: 2.5rem;
+  background-color: var(--green);
+  border: 1px solid var(--green);
+  color: white;
+  border-radius: 10px;
+  width: 7rem;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.start-free-button:hover {
+  transition: 0.2s;
+  background-color: #00bf92;
+}
+
+.sub-header {
+  display: flex;
+  align-items: center;
+  height: 2.5rem;
+  padding: 0rem 2.5rem;
+}
+
+.sub-header-left {
+  display: flex;
+  align-items: center;
+}
+
+.sub-header-left a {
+  margin-right: 1.5rem;
+  color: grey;
+  font-size: 15px;
+}
+
+.sub-header-left a:hover {
+  color: rgb(94, 101, 96);
+}
