@@ -1,5 +1,6 @@
 .sticky-header {
   position: sticky;
+  top: 0;
   height: 5rem;
   display: flex;
   align-items: center;
@@ -7,7 +8,9 @@
   padding: 0rem 2.5rem;
   font-size: 15px;
   font-weight: 400;
-  border-bottom: 1px solid rgba(160, 160, 160, 0.349);
+  background-color: white;
+  border-bottom: 0.5px solid rgba(160, 160, 160, 0.349);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.241);
 }
 
 .sticky-header-left {
