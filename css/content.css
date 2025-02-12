@@ -62,5 +62,115 @@
   width: 8rem;
   border-radius: 100px;
   padding: 0.4rem;
+}
 
+
+.plan-selector-wrapper {
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.plan-selector-wrapper :last-child {
+  margin-right: 0rem;
+}
+
+.plan-container {
+  height: 130vh;
+  border-radius: 15px;
+  box-shadow: 0 0 30px rgba(61, 61, 61, 0.211);
+  display: flex;
+  flex-basis: auto;
+  flex-direction: column;
+  align-items: center;
+  padding: 0rem 2rem;
+  max-width: 15rem;
+  margin-right: 1.5rem;
+}
+
+.plan-title {
+  font-size: 30px;
+  margin-top: 3.5rem;
+  font-weight: 500;
+}
+
+.plan-price {
+  display: flex;
+  align-items: baseline;
+}
+
+.price-dollar-sign {
+  font-size: 24px;
+  margin-right: 0.4rem;
+}
+
+.price-amount {
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.price-amount-description {
+  margin-left: 0.4rem;
+  font-size: 14px;
+  color: rgba(152, 152, 152, 0.811);
+}
+
+.plan-purchase-button {
+  background-color: var(--green);
+  border-radius: 10px;
+  padding: 1rem 1.4rem;
+  border: none;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.plan-subtitle {
+  font-size: 13px;
+  color: rgb(109, 109, 109);
+  text-align: center;
+}
+
+.plan-subtitle :first-child {
+  margin-bottom: 1rem;
+}
+
+.plan-divider {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.369);
+  height: 1px;
+  width: 100%;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.plan-perks-container {
+  align-items: start;
+}
+
+.plan-perk {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.8rem;
+  font-size: 15px;
+  color: rgb(85, 85, 85);
+  word-wrap: normal;
+}
+
+.plan-perk img {
+  height: 1rem;
+  padding-right: 1rem;
+}
+
+.plan-perk span {
+  font-weight: 600;
+  color: black;
+}
+
+.purchase-button-2 {
+  margin-top: auto;
+  margin-bottom: 3rem;
 }
