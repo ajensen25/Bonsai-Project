@@ -88,6 +88,8 @@
   padding: 0rem 2rem;
   max-width: 15rem;
   margin-right: 1.5rem;
+  position: relative;
+  background-color: white;
 }
 
 .plan-title {
@@ -173,4 +175,90 @@
 .purchase-button-2 {
   margin-top: auto;
   margin-bottom: 3rem;
+}
+
+.most-popular-plan {
+  background-color: rgb(237, 140, 60);
+  position: absolute;
+  right: -0.3rem;
+  left: -0.3rem;
+  top: -3rem;
+  bottom: -0.3rem;
+  z-index: -1;
+  border-radius: 15px;
+}
+
+.most-popular-plan p {
+  color: white;
+  font-size: 13px;
+  text-align: center;
+  padding-top: 0.3rem;
+}
+
+
+
+.addons-container {
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10rem;
+}
+
+.addons-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.addons-tax-wrapper {
+  background-color: rgba(236, 219, 219, 0.256);
+  border-radius: 15px;
+  margin-top: 3rem;
+  width: 17rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.tax-title {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.tax-description {
+  text-align: center;
+  font-size: 14px;
+  color: rgb(116, 115, 115);
+}
+
+.tax-link {
+  margin: 1.5rem 0rem;
+}
+
+#tax-link {
+  color: var(--green);
+  font-size: 14px;
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
+}
+
+.tax-price {
+  display: flex;
+  align-items: baseline;
+}
+
+.tax-price :first-child {
+  margin-right: 0.4rem;
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.tax-price :last-child {
+  font-size: 14px;
+  color: grey;
+  font-weight: 600;
 }

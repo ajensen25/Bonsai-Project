@@ -11,6 +11,7 @@
   background-color: white;
   border-bottom: 0.5px solid rgba(160, 160, 160, 0.349);
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.241);
+  z-index: 500;
 }
 
 .sticky-header-left {
