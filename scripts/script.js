@@ -274,7 +274,6 @@ function renderPlanContainers() {
 
   document.querySelectorAll('.js-start-free-button').forEach((button) => {
     button.addEventListener('click', () => {
-      console.log('hello')
       location.href = 'https://app.hellobonsai.com/users/sign_up/?int_source=pricing&int_content=annual_business';
     });
   });
@@ -292,9 +291,12 @@ function renderPlanContainers() {
   const monthlyButton = document.querySelector('.js-monthly-button');
   const yearlyButton = document.querySelector('.js-yearly-button');
 
+  const selectorBackground = document.querySelector('.js-selector-background')
+
   // 12 stands for monthlyPlan, 1 stands for yearlyPlan
   let planTerm = 1;
 
+  let debounceTimeout;
   monthlyButton.addEventListener('click', () => {
     if (planTerm === 1) {
       basicPrice = prices.monthly.basic;
@@ -308,6 +310,9 @@ function renderPlanContainers() {
       document.querySelectorAll('.plan-subtitle-bill').forEach((element) => {
         element.classList.add('subtitle-bill-hidden');
       });
+
+      selectorBackground.style.transform = 'translateX(0%)';
+      selectorBackground.style.width = '7rem';
     }
   });
 
@@ -324,6 +329,9 @@ function renderPlanContainers() {
       document.querySelectorAll('.plan-subtitle-bill').forEach((element) => {
         element.classList.remove('subtitle-bill-hidden');
       });
+
+      selectorBackground.style.transform = 'translateX(46%)';
+      selectorBackground.style.width = '15rem';
     }
   });
 }

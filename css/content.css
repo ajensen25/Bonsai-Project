@@ -25,11 +25,14 @@
   display: flex;
   align-items: center;
   padding: 0.5rem;
+  position: relative;
+  z-index: 5;
 }
 
 .monthly-plan {
   background: none;
   border: none;
+  border-radius: 15px;
   color: white;
   font-size: 14px;
   font-weight: 600;
@@ -38,7 +41,7 @@
 }
 
 .yearly-plan {
-  background-color: black;
+  background: none;
   border: none;
   border-radius: 15px;
   color: white;
@@ -49,6 +52,18 @@
   cursor: pointer;
   width: 15rem;
   height: 100%;
+}
+
+.selector-background {
+  background-color: black;
+  border-radius: 15px;
+  position: absolute;
+  top: 10%;
+  bottom: 10%;
+  width: 15rem;
+  z-index: -1;
+  transform: translateX(47%);
+  transition: 0.5s;
 }
 
 #yearly-plan-non {
