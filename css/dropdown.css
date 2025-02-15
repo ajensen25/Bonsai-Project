@@ -1,0 +1,7 @@
+.product-dropdown {
+  display: none;
+}
+
+.product-navbar:hover .product-dropdown {
+  display: block;
+}
