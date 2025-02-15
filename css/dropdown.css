@@ -1,7 +1,53 @@
 .product-dropdown {
-  display: none;
+  height: 20rem;
+  box-shadow: 0 0 25px rgba(171, 171, 171, 0.566);
+  width: 100%;
+  position: absolute;
+  z-index: 10;
+  background-color: white;
 }
 
-.product-navbar:hover .product-dropdown {
-  display: block;
+.product-dropdown-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 3.5rem 0;
+  padding-left: 2.5rem;
+  font-size: 15px;
+  width: 85%;
+}
+
+.product-dropdown-section {
+  width: 15rem;
+}
+
+.product-section-title {
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.product-section-list {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.product-list-link {
+  margin-bottom: 0.5rem;
+}
+
+.product-list-link:hover {
+  color: var(--green);
+}
+
+#whats-new-link {
+  font-size: 13px;
+  text-decoration: underline;
+  color: var(--green);
+  margin-left: 0.5rem;
+}
+
+
+.whats-new-img {
+  height: 7rem;
+  width: 8rem;
 }

@@ -337,3 +337,22 @@ function renderPlanContainers() {
 }
 
 renderPlanContainers();
+
+
+// header dropdown code
+
+const productNavbar = document.querySelector('.js-product-navbar');
+const usecasesNavbar = document.querySelector('.js-product-navbar');
+const templatesNavbar = document.querySelector('.js-product-navbar');
+
+const productDropdown = document.querySelector('.js-product-dropdown');
+productDropdown.style.display = 'none';
+
+
+productNavbar.addEventListener('mouseover', () => {
+  productDropdown.style.display = '';
+});
+
+productNavbar.addEventListener('mouseout', () => {
+  productDropdown.style.display = 'none';
+});
