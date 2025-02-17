@@ -2,7 +2,8 @@
   height: 20rem;
   box-shadow: 0 0 25px rgba(171, 171, 171, 0.566);
   width: 100%;
-  position: absolute;
+  position: fixed;
+  top: 5rem;
   z-index: 10;
   background-color: white;
 }
@@ -50,4 +51,64 @@
 .whats-new-img {
   height: 7rem;
   width: 8rem;
+}
+
+
+/* Template dropdown styling */
+
+.templates-dropdown {
+  width: 100%;
+  /*
+  position: fixed;
+  top: 5rem;
+  */
+  z-index: 10;
+  background-color: white;
+  box-shadow: 0 0 25px rgba(171, 171, 171, 0.566);
+}
+
+.templates-dropdown-wrapper {
+  padding-left: 2.5rem;
+  font-size: 15px;
+  width: 90%;
+  display: flex;
+}
+
+.templates-dropdown-left {
+  border-right: 1px solid rgba(188, 188, 188, 0.484);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.dropdown-left-list {
+  padding: 0.5rem 0rem;
+}
+
+.dropdown-left-list-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  margin-right: 1rem;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.selected-button {
+  background-color: rgba(230, 230, 230, 0.494);
+}
+
+.button-arrow {
+  height: 1.5rem;
+  margin-left: 3rem;
+}
+
+
+
+.dropdown-left-templates-link {
+  padding: 2rem 1rem;
+  font-size: 14px;
+  color: var(--green);
 }
