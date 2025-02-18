@@ -163,3 +163,81 @@
   text-decoration: underline;
   text-underline-offset: 4px;
 }
+
+/* Hamburger dropdown styling */
+
+.hamburger-dropdown {
+  width: 100%;
+  background-color: white;
+  z-index: 20;
+  position: fixed;
+  top: 5rem;
+}
+
+.hamburger-dropdown-wrapper {
+  padding: 2rem;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.dropdown-arrow {
+  height: 2.5rem;
+}
+
+.hamburger-dropdown-product, 
+.hamburger-dropdown-usecases,
+.hamburger-dropdown-templates, 
+.hamburger-dropdown-pricing {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(181, 181, 181, 0.61);
+}
+
+.hamburger-dropdown-stories {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.dropdown-login-button, 
+.dropdown-book-button {
+  display: block;
+  width: 100%;
+  padding: 0.8rem 0rem;
+  background: none;
+  border: 2px solid rgb(0, 0, 0);
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.dropdown-login-button:hover, 
+.dropdown-book-button:hover {
+  background: fixed;
+  background-color: rgba(240, 240, 240, 0.792);
+}
+
+.dropdown-start-button {
+  display: block;
+  width: 100%;
+  padding: 0.8rem 0rem;
+  background-color: var(--green);
+  border: 2px solid var(--green);
+  color: white;
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.dropdown-start-button:hover {
+  background-color: #04c497;
+}

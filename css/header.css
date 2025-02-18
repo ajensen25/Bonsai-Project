@@ -146,3 +146,51 @@
 .sub-header-left a:hover {
   color: rgb(94, 101, 96);
 }
+
+/* Mobile Header styling */
+
+.mobile-header {
+  width: 100%;
+  display: none;
+}
+
+.mobile-header-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mobile-header-left {
+  display: flex;
+  align-items: center;
+}
+
+.mobile-header-right {
+  display: flex;
+  align-items: center;
+}
+
+.hamburger-button {
+  background-color: black;
+  border-radius: 100px;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.hamburger-logo {
+  height: 1.7rem;
+  width: 1.7rem;
+}
+
+@media only screen and (width < 1100px) {
+  .sticky-header-left, 
+  .sticky-header-right {
+    display: none;
+  }
+  .mobile-header {
+    display: block;
+  }
+}

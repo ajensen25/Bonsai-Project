@@ -354,6 +354,11 @@ usecasesDropdown.style.display = 'none';
 const templatesDropdown = document.querySelector('.js-templates-dropdown')
 templatesDropdown.style.display = 'none'
 
+const hamburgerButton = document.querySelector('.js-hamburger-button');
+
+const hamburgerDropdown = document.querySelector('.js-hamburger-dropdown')
+hamburgerDropdown.style.display = 'none';
+
 function dropdownEventListener(navbarElement, dropdownElement) {
   navbarElement.addEventListener('click', () => {
     if (dropdownElement.style.display === '') {
@@ -375,3 +380,5 @@ dropdownEventListener(productNavbar, productDropdown);
 dropdownEventListener(usecasesNavbar, usecasesDropdown);
 
 dropdownEventListener(templatesNavbar, templatesDropdown);
+
+dropdownEventListener(hamburgerButton, hamburgerDropdown);
